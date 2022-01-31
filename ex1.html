@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Ex1</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        $(document).ready(function () {
+            $(".image").mouseover(function () {
+                $(".image").animate({ opacity: 1 }, "slow");
+            });
+            $(".image").mouseleave(function () {
+                $(".image").animate({ opacity: 0.5 }, "slow");
+            });
+        });              
+    </script>
+</head>
+
+<body>
+    <div class="center">
+        <table>
+            <tr>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/1.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/2.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/3.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/4.jpg" /></a></td>
+            </tr>
+            <tr>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/1.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/2.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/3.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/4.jpg" /></a></td>
+            </tr>
+            <tr>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/1.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/2.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/3.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/4.jpg" /></a></td>
+            </tr>
+            <tr>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/1.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/2.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/3.jpg" /></a></td>
+                <td><a href="http:\\www.google.com"><img class="image" src="./images/4.jpg" /></a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

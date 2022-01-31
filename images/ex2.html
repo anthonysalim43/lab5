@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="lab.css">
+        <title>Ex2</title>
+
+        <script>
+            $(document).ready(function(){
+                for(i=2; i<6; i++)
+                {
+                    $(".image"+i).hide();
+                }
+            });              
+        </script> 
+
+        <script>
+            var t;var c=0;
+            function timedCount() {
+                
+                t=setTimeout("timedCount()",1000);           
+               $(document).ready(function(){
+                j=c+1;
+                      $(".image"+c).fadeOut(1000,function(){
+                        $(".image"+j).show();                               
+                       });
+               })
+               c=c+1;         
+            }
+                
+            function stopCount() {
+               clearTimeout(t);
+            }
+            
+           /* $(document).ready(function(){
+                function fadein(a)
+                {
+                    $(".image"+a).fadeIn(3000,fadeout(a))
+                }
+                function fadeout(c)
+                {
+                    $(".image"+c).fadeOut(3000,fadein(c+1));
+                }
+                
+                $("button").click(function(){
+                    for(i=1; i<5; i++)
+                    { j=i+1;
+                      $(".image"+i).fadeOut(3000,function(){
+                        $(".image"+j).show(slow);                               
+                       });  
+                    }                                   
+                });
+            });  */            
+        </script>
+    </head>
+
+    <body>
+        <img id="im" class="image1" src="1.jpg">
+        <img id="im" src="2.jpg" class="image2">
+        <img id="im" src="3.jpg" class="image3">
+        <img id="im" src="4.jpg" class="image4">
+        <img id="im" src="5.jpg" class="image5">  
+        
+        <button onclick="timedCount()">Click Me</button> 
+    </body>
+</html>
