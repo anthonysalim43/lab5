@@ -10,10 +10,10 @@
     <script>
         $(document).ready(function () {
             $(".image").mouseover(function () {
-                $(".image").animate({ opacity: 1 }, "slow");
+                $(this).animate({ opacity: 1 }, "slow");
             });
             $(".image").mouseleave(function () {
-                $(".image").animate({ opacity: 0.5 }, "slow");
+                $(this).animate({ opacity: 0.5 }, "slow");
             });
         });              
     </script>
